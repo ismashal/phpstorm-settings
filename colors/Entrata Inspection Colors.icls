@@ -1,0 +1,21 @@
+<scheme name="Entrata Inspection Colors" version="142" parent_scheme="Default">
+  <metaInfo>
+    <property name="created">2016-09-17T00:57:11</property>
+    <property name="ide">PhpStorm</property>
+    <property name="ideVersion">2016.2.1.0.0</property>
+    <property name="modified">2016-09-17T00:58:10</property>
+    <property name="originalScheme">Default</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
+  <option name="EDITOR_FONT_SIZE" value="12" />
+  <option name="EDITOR_FONT_NAME" value="Monospaced" />
+  <attributes>
+    <option name="SONARLINT_INFO">
+      <value>
+        <option name="EFFECT_COLOR" value="dde0e5" />
+        <option name="ERROR_STRIPE_COLOR" value="dde0e5" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+  </attributes>
+</scheme>

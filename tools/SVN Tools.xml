@@ -1,0 +1,51 @@
+<toolSet name="SVN Tools">
+  <tool name="SVN Log" description="Opens Tortoise SVN's log window" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:log \/path:$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Revert" description="Opens Tortoise SVN's Revert" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:revert \/path:$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Update" description="Opens Tortoise SVN's Update" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:update \/path:$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Commit" description="Opens Tortoise SVN's commit dialog" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:commit \/path:$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Diff" description="Opens Tortoise SVN's diff window" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:diff \/path:$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Blame" description="Opens Tortoise SVN's blame window" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:blame \/path:$FilePath$ /line:$LineNumber$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+  <tool name="SVN Cleanup" description="Cleanup SVN" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="\/command:cleanup \/path:$ProjectFileDir$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/TortoiseSVN/bin" />
+    </exec>
+  </tool>
+</toolSet>

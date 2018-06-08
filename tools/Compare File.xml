@@ -1,0 +1,44 @@
+<toolSet name="Compare File">
+  <tool name="With QA" description="Compares current file with QA server file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;\\192.168.172.8\Vhosts\Entrata\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="With Trunk" description="Compares current file with trunk file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;C:\svn\PsCore\trunk\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="With Standard Production" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;C:\svn\PsCore\branches\standardproduction\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="With Rapid Production" description="Compares current file with rapid production file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;C:\svn\PsCore\branches\rapidproduction\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="With Standard Stage" description="Compares current file with standard stage file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;C:\svn\PsCore\branches\standardstage\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="With Rapid Stage" description="Compares current file with rapid stage file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" />
+      <option name="PARAMETERS" value="/command:diff /path:&quot;C:\svn\PsCore\branches\rapidstage\$FileRelativePath$&quot; /path2:&quot;$ProjectFileDir$\$FileRelativePath$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

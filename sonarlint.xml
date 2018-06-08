@@ -1,0 +1,14 @@
+<application>
+  <component name="SonarLintGlobalSettings">
+    <option name="autoTrigger" value="false" />
+    <option name="sonarQubeServers">
+      <list>
+        <SonarQubeServer>
+          <token>df9bdf9fdf9cdf93df9ddfc9df9bdfccdf9cdfccdf9adf9ddf9edf93df9ddf9fdf99dfc8df9edfccdfcedf93df92dfcfdfc8df9cdf98df93df9fdf9edf9bdf9ddfcfdf98df9adf98df92dfcbdfcfdf9f</token>
+          <option name="hostUrl" value="http://sonar.entrata.lcl:9000/" />
+          <option name="name" value="http://sonar.entrata.lcl:9000/" />
+        </SonarQubeServer>
+      </list>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,15 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="FuseBox Controller.php" reformat="true" live-template-enabled="true" />
+    </default_templates>
+    <includes_templates>
+      <template name="PHP Field Doc Comment.php" reformat="true" live-template-enabled="true" enabled="true" />
+    </includes_templates>
+    <code_templates>
+      <template name="PHP Fluent Setter Method.php" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="PHP Getter Method.php" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="PHP Setter Method.php" reformat="true" live-template-enabled="true" enabled="true" />
+    </code_templates>
+  </component>
+</application>
