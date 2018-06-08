@@ -1,5 +1,0 @@
-<application>
-  <component name="NotificationConfiguration">
-    <notification groupId="Php Inspections (EA Extended)" displayType="NONE" shouldLog="false" />
-  </component>
-</application>
