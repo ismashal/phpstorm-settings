@@ -1,0 +1,23 @@
+<toolSet name="Entrata Tools">
+  <tool name="Fix CodeSniffer Issues" description="CodeSniffer Auto Fixer with PHPCBF Coding Standards Fixer" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="phpcbf.bat" />
+      <option name="PARAMETERS" value="-d memory_limit=2048M --no-patch --standard=C:\svn\PsCore\trunk\Libraries\Psi\PhpCodeSniffer\PSI\ruleset.xml $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Run this Script with parameters" description="Run any script from PHP storm. It will prompt you for paramters" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="php " />
+      <option name="PARAMETERS" value="$FilePath$ $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Patch for code review ( Phabricator Diff )" description="Create Diff on Phabricator" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="php" />
+      <option name="PARAMETERS" value="$ProjectFileDir$/Applications/Scripts/Application/Admin/Tools/CCreateCodeReviewDiffScript.class.php --path $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

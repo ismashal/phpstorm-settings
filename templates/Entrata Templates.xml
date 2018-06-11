@@ -1,0 +1,31 @@
+<templateSet group="Entrata Templates">
+  <template name="$objSmarty-&gt;assign" value="$objSmarty-&gt;assign( '$KEY$',&#9;&#9;&#9;$VARIABLE$ );" description="Smarty assignment statment" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="phpVar" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="phpVar" defaultValue="&quot;$objVariable&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="valobj" value="if( true == valObj( $FIELD$ , '$FIELD_OBJECT_CLASS$' ) ) {&#10;}" description="Wraps a valObj statement" toReformat="false" toShortenFQNames="true">
+    <variable name="FIELD_OBJECT_CLASS" expression="clipboard()" defaultValue="$this-&gt;m_objMemberVariable" alwaysStopAt="false" />
+    <variable name="FIELD" expression="clipboard()" defaultValue="CMemberVariable" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="disp" value="display($VAR$);" description="Wraps a display function around clipboard data" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sho" value="show( $VAR$ );" description="Wraps a show() function around clipboard data" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+</templateSet>
